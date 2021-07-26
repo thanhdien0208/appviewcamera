@@ -44,9 +44,9 @@
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    
+    -moz-box-sizing: border-box;  
 }
+
 input, button{
     outline: none;
 }
@@ -278,6 +278,7 @@ header{
 main{
     margin-top: calc(70px + .5rem);
     padding: 1rem 0rem;
+    overflow: hidden;
 }
 .main-view{
     margin-top: 1rem;
@@ -913,6 +914,9 @@ main{
     .chart-grid {
         grid-template-columns: 100%;
     }
+    .chart-follow {
+        width: 100%;
+    }
 
 }
 @media only screen and (max-width: 845px){
@@ -1071,60 +1075,21 @@ main{
         grid-template-columns: 100%;
         place-items: center;
     }
-}
-@media only screen and (max-width: 667px){
-    .alarms {
-        grid-template-columns: 100%;
-    }
-    .cards{
-        grid-template-columns: 100%;
-    }
-    /* mainview */
-    .main-view .view-video {
-        display: inline-block;
-        border-radius: 3px;
-        background: var(--conver-color);
-    }
-
-    .view-video .brand-view {
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .view-video .brand-view video{
-        width: 250px;
-        /* margin-left: -15px; */
-    }
-
-    .view-video .la-video {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background: var(--cloes);
-        color: var(--view-color);
-        font-size: 1.5rem;
-        display: grid;
-        place-items: center;
-        margin-bottom: -20px;
-    }
-    /* .alarm-images{
-        width: 90%;
-    } */
-    /* .alarm-images img {
-        width: 200px;
-        height: 100px;
-    } */
-    /* .chart-follow {
+    .chart-sales {
         width: 100%;
     }
-    .chart-sales{
-        width: 100%;
-    } */
-    .chart-grid {
-        grid-template-columns: 100%;
-        place-items: center;
+
+    #light-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        background: #ccc;
+        width: 45px;
+        border-radius: 15px;
+        padding: 2px 3px;
+        cursor: pointer;
+        display: flex;
+        transition: padding-left 0.5s, background 0.5s;
     }
 }
 
@@ -1147,7 +1112,7 @@ main{
     }
 
     .view-video .brand-view video {
-        width: 160px;
+        width: 180px;
     }
 
     .view-video .la-video {
@@ -1164,7 +1129,7 @@ main{
 
     .alarm-images img {
         margin: 1rem;
-        width: 160px;
+        width: 200px;
         height: 120px;
     }
     .alarm-list a span{
@@ -1176,5 +1141,17 @@ main{
     .chart-grid {
         grid-template-columns: 100%;
         place-items: center;
+    }
+    #light-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        background: #ccc;
+        width: 45px;
+        border-radius: 15px;
+        padding: 2px 3px;
+        cursor: pointer;
+        display: flex;
+        transition: padding-left 0.5s, background 0.5s;
     }
 }
