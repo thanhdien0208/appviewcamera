@@ -18,7 +18,7 @@
         #e2d0abc0
         );
     --icon: #da2128;
-    --header: rgba(0, 0, 0, 0.774);
+    --header: #000;
 }
 .light-theme{
     --main: #da2128;
@@ -380,6 +380,11 @@ header{
     height: 30px;
     border-radius: 50%;
     border: 2px solid var(--main);
+}
+.user-profiles img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 .user-profile p {
