@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- VideoJS CSS-->
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
 </head>
 <body>
     <input type="checkbox" id="menu-toggle">
+    
     <div class="sidebar">
         <div class="brand">
             <a class="logo" href="https://pvssolution.com"><img src="./images/logo_pvs_white.png" alt="logo"></a>
@@ -110,6 +113,7 @@
                         <span></span>
                     </div>
                     <div class="setting-menu-inner">
+                        
                         <div class="user-profile">
                             <img src="./images/profile.jpg" alt="profile">
                             <div>
@@ -117,6 +121,9 @@
                                 <a href="#">See your profile</a>
                             </div>
                         </div>
+                        <!-- <label class="close-mobile-menu" for="menu-toggle">
+                            <span class="las la-times-circle"></span>
+                        </label> -->
                         <hr>
                         <div class="user-profile">
                             <img src="./images/feedback.png" alt="user-profile">
@@ -153,26 +160,34 @@
                     <div class="brand-view">
                         <span class="las la-video"></span>
                         <p class="title-view">Dự án 1</p>
-                        <div class="video-camera"><video src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" autoplay loop controls>Trình duyệt không hỗ trợ!</video></div>
-                        <div class="button-view"><a href="#" >Xem chi tiết</a></div>
+                        <div class="video-camera"><video id='camera-1'  class="video-js vjs-default-skin" width="300" controls autoplay>
+                            <source type="application/x-mpegURL" src="https://htvc271120.cdn.vnns.io/htv7.cat.720p.tms/playlist.m3u8">
+                            Trình duyệt không hỗ trợ!</video></div>
+                        <button class="button-view"><a href="#" >Xem chi tiết</a></button>
                     </div>
                     <div class="brand-view">
                         <span class="las la-video"></span>
                         <p class="title-view">Dự án 2</p>
-                        <div class="video-camera"><video src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" autoplay loop controls>Trình duyệt không hỗ trợ!</video></div>
-                        <div class="button-view"><a href="#" >Xem chi tiết</a></div>
+                        <div class="video-camera"><video id='camera-2'  class="video-js vjs-default-skin" width="300" controls autoplay>
+                            <source type="application/x-mpegURL" src="https://htvc271120.cdn.vnns.io/htv7.cat.720p.tms/playlist.m3u8">
+                            Trình duyệt không hỗ trợ!</video></div>
+                        <button class="button-view"><a href="#" >Xem chi tiết</a></button>
                     </div>
                     <div class="brand-view">
                         <span class="las la-video"></span>
                         <p class="title-view">Dự án 3</p>
-                        <div class="video-camera"><video src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" autoplay loop controls>Trình duyệt không hỗ trợ!</video></div>
-                        <div class="button-view"><a href="#" >Xem chi tiết</a></div>
+                        <div class="video-camera"><video id='camera-3'  class="video-js vjs-default-skin" width="300" controls autoplay>
+                            <source type="application/x-mpegURL" src="https://htvc271120.cdn.vnns.io/htv7.cat.720p.tms/playlist.m3u8">
+                            Trình duyệt không hỗ trợ!</video></div>
+                        <button class="button-view"><a href="#" >Xem chi tiết</a></button>
                     </div>
                     <div class="brand-view">
                         <span class="las la-video"></span>
                         <p class="title-view">Dự án 4</p>
-                        <div class="video-camera"><video src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" autoplay loop controls>Trình duyệt không hỗ trợ!</video></div>
-                        <div class="button-view"><a href="#" >Xem chi tiết</a></div>
+                        <div class="video-camera"><video id='camera-4'  class="video-js vjs-default-skin" width="300" controls autoplay>
+                            <source type="application/x-mpegURL" src="https://htvc271120.cdn.vnns.io/htv7.cat.720p.tms/playlist.m3u8">
+                            Trình duyệt không hỗ trợ!</video></div>
+                        <button class="button-view"><a href="#" >Xem chi tiết</a></button>
                     </div>
                 </div>
 
@@ -180,26 +195,34 @@
                     <div class="brand-view">
                         <span class="las la-video"></span>
                         <p class="title-view">Dự án 5</p>
-                        <div class="video-camera"><video src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" autoplay loop controls>Trình duyệt không hỗ trợ!</video></div>
-                        <div class="button-view"><a href="#" >Xem chi tiết</a></div>
+                        <div class="video-camera"><video id='camera-5'  class="video-js vjs-default-skin" width="300" controls autoplay>
+                            <source type="application/x-mpegURL" src="https://htvc271120.cdn.vnns.io/htv7.cat.720p.tms/playlist.m3u8">
+                            Trình duyệt không hỗ trợ!</video></div>
+                        <button class="button-view"><a href="#" >Xem chi tiết</a></button>
                     </div>
                     <div class="brand-view">
                         <span class="las la-video"></span>
                         <p class="title-view">Dự án 6</p>
-                        <div class="video-camera"><video src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" autoplay loop controls>Trình duyệt không hỗ trợ!</video></div>
-                        <div class="button-view"><a href="#" >Xem chi tiết</a></div>
+                        <div class="video-camera"><video id='camera-6'  class="video-js vjs-default-skin" width="300" controls autoplay>
+                            <source type="application/x-mpegURL" src="https://htvc271120.cdn.vnns.io/htv7.cat.720p.tms/playlist.m3u8">
+                            Trình duyệt không hỗ trợ!</video></div>
+                        <button class="button-view"><a href="#" >Xem chi tiết</a></button>
                     </div>
                     <div class="brand-view">
                         <span class="las la-video"></span>
                         <p class="title-view">Dự án 7</p>
-                        <div class="video-camera"><video src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" autoplay loop controls>Trình duyệt không hỗ trợ!</video></div>
-                        <div class="button-view"><a href="#" >Xem chi tiết</a></div>
+                        <div class="video-camera"><video id='camera-7'  class="video-js vjs-default-skin" width="300" controls autoplay>
+                            <source type="application/x-mpegURL" src="https://htvc271120.cdn.vnns.io/htv7.cat.720p.tms/playlist.m3u8">
+                            Trình duyệt không hỗ trợ!</video></div>
+                        <button class="button-view"><a href="#" >Xem chi tiết</a></button>
                     </div>
                     <div class="brand-view">
                         <span class="las la-video"></span>
                         <p class="title-view">Dự án 8</p>
-                        <div class="video-camera"><video src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" autoplay loop controls>Trình duyệt không hỗ trợ!</video></div>
-                        <div class="button-view"><a href="#" >Xem chi tiết</a></div>
+                        <div class="video-camera"><video id='camera-8'  class="video-js vjs-default-skin" width="300" controls autoplay>
+                            <source type="application/x-mpegURL" src="https://htvc271120.cdn.vnns.io/htv7.cat.720p.tms/playlist.m3u8">
+                            Trình duyệt không hỗ trợ!</video></div>
+                        <button class="button-view"><a href="#" >Xem chi tiết</a></button>
                     </div>
                 </div>
                 
@@ -377,5 +400,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <script src="./main.js"></script>
     <script src="./script.js"></script>
+    <!-- JS code -->
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+    <script>
+        var player = videojs('camera-1');
+        player.play();
+        var player = videojs('camera-2');
+        player.play();
+        var player = videojs('camera-3');
+        player.play();
+        var player = videojs('camera-4');
+        player.play();
+        var player = videojs('camera-5');
+        player.play();
+        var player = videojs('camera-6');
+        player.play();
+        var player = videojs('camera-7');
+        player.play();
+        var player = videojs('camera-8');
+        player.play();
+    </script>
 </body>
 </html>

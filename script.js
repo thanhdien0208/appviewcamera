@@ -61,4 +61,13 @@ else{
 
 function settingsMenuToggle(){
     settingsmenu.classList.toggle("settings-menu-height");
+
+}
+
+var videoElement = document.getElementById("myVideo");
+if(videoElement.canPlayType('application/vnd.Apple.mpegurl') === "probably" || videoElement.canPlayType('application/vnd.Apple.mpegurl') === "maybe"){
+    //Actions like playing the .m3u8 content
+}
+else{
+    //Actions like playing another video type
 }
