@@ -1,4 +1,4 @@
-var settingsmenu = document.querySelector(".sidebar");
+var settingsmenu = document.querySelector(".settings-menu");
 var lightBtn = document.getElementById("light-btn");
 
 lightBtn.onclick = function(){
@@ -56,4 +56,9 @@ else{
  
   function currentSlide(n) {
     showSlides(slideIndex = n);
-  }
+}
+  
+
+function settingsMenuToggle(){
+    settingsmenu.classList.toggle("settings-menu-height");
+}
