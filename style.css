@@ -353,7 +353,7 @@ header{
     width: 90%;
     max-width: 350px;
     height: 500px;
-    background: var(--bg--body);
+    background: var(--conver-color);
     box-shadow: 0 0 10px var(--shadow);
     border-radius: 4px;
     overflow: hidden;
