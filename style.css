@@ -433,19 +433,23 @@ header{
     color: #626262;
     font-size: 11px;
 }
+.setting-links .setting-text {
+    margin-left: 10px;
+}
 .setting-links .icons-arrow {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 130px;
+    margin-left: 100px;
     color: #626262;
     font-size: 11px;
+    
 }
 .setting-links .icons-arrows {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 116px;
+    margin-left: 96px;
     color: #626262;
     font-size: 11px;
 }
