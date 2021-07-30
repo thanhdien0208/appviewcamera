@@ -71,3 +71,5 @@ if(videoElement.canPlayType('application/vnd.Apple.mpegurl') === "probably" || v
 else{
     //Actions like playing another video type
 }
+
+
